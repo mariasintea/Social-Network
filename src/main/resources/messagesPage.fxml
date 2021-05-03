@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MessagesPageController">
+   <children>
+       <Pagination fx:id="pagination" layoutX="32.0" layoutY="75.0" prefHeight="274.0" prefWidth="540.0" />
+      <TableView fx:id="messagesTable" layoutX="32.0" layoutY="81.0" prefHeight="213.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="fromColumn" prefWidth="70.0" text="From" />
+          <TableColumn fx:id="toColumn" prefWidth="140.0" text="To" />
+            <TableColumn fx:id="dateColumn" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="messageColumn" prefWidth="240.0" text="Message" />
+        </columns>
+      </TableView>
+      <Button layoutX="100.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleShowConversation" prefHeight="25.0" prefWidth="183.0" text="Show entire conversation" />
+      <Button layoutX="377.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleAddMessage" prefHeight="25.0" prefWidth="123.0" text="Add Message" />
+   </children>
+</AnchorPane>

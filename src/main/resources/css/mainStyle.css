@@ -1,0 +1,26 @@
+.root{
+    -fx-background-image: url("../images/background.jpg");
+}
+
+.label {
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 2, 0.0 , 0 , 1 );
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-font-size: 36;
+}
+
+.button {
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-radius: 50px;
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: rgb(256, 256, 256);
+    -fx-text-fill: rgb(130, 201, 201);
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportsPageController">
+   <children>
+      <Button layoutX="108.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleActivityReport" prefHeight="25.0" prefWidth="110.0" text="Activity report" />
+      <Button layoutX="261.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleMessagesReport" prefHeight="25.0" prefWidth="230.0" text="Messages received from friend report" />
+      <DatePicker fx:id="startTime" layoutX="108.0" layoutY="150.0" />
+      <Label layoutX="108.0" layoutY="123.0" text="Starting date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="123.0" text="Ending date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="endTime" layoutX="317.0" layoutY="150.0" />
+      <Label layoutX="108.0" layoutY="220.0" text="Friend(for Messages report)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="usersFriends" layoutX="315.0" layoutY="217.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

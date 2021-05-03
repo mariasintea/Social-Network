@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShowRequestsHistoryPageController">
+   <children>
+       <Pagination fx:id="pagination" layoutX="50.0" layoutY="105.0" prefHeight="274.0" prefWidth="500.0" />
+      <TableView fx:id="requestsTableView" layoutX="50.0" layoutY="110.0" prefHeight="213.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="200" text="Username" />
+          <TableColumn fx:id="statusColumn" prefWidth="150" text="Status" />
+            <TableColumn fx:id="dateColumn" prefWidth="150" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

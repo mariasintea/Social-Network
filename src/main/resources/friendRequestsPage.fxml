@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FriendRequestsPageController">
+   <children>
+      <Pagination fx:id="paginationReceived" layoutX="30.0" layoutY="65.0" prefHeight="274.0" prefWidth="250.0" />
+      <TableView fx:id="receivedFriendRequests" layoutX="30.0" layoutY="70.0" prefHeight="213.0" prefWidth="250.0">
+        <columns>
+          <TableColumn fx:id="usernameColumnReceived" prefWidth="150.0" text="username" />
+          <TableColumn fx:id="dateColumnReceived" prefWidth="100.0" text="date" />
+        </columns>
+      </TableView>
+      <Pagination fx:id="paginationSent" layoutX="320.0" layoutY="65.0" prefHeight="274.0" prefWidth="250.0" />
+      <TableView fx:id="sentFriendRequests" layoutX="320.0" layoutY="70.0" prefHeight="213.0" prefWidth="250.0">
+         <columns>
+            <TableColumn fx:id="usernameColumnSent" prefWidth="150.0" text="username" />
+            <TableColumn fx:id="dateColumnSent" prefWidth="100.0" text="date" />
+         </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="28.0" text="Received Friend Requests">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="28.0" text="Sent Friend Requests">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="88.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleAcceptFriendRequest" prefHeight="25.0" prefWidth="133.0" text="Accept Request" />
+      <Button layoutX="88.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleDeclineFriendRequest" prefHeight="25.0" prefWidth="133.0" text="Decline Request" />
+      <Button layoutX="365.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleDeleteFriendRequest" prefHeight="25.0" prefWidth="160.0" text="Delete Friend Request" />
+      <Button layoutX="365.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleShowHistory" prefHeight="25.0" prefWidth="160.0" text="Show Requests History" />
+   </children>
+</AnchorPane>

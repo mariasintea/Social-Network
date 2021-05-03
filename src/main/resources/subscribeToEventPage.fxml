@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="440.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SubscribeToEventPageController">
+   <children>
+       <Pagination fx:id="pagination" layoutX="22.0" layoutY="26.0" prefHeight="274.0" prefWidth="396.0" />
+       <TableView fx:id="tableEvents" layoutX="22.0" layoutY="31.0" prefHeight="213.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="organizerColumn" prefWidth="96.33331298828125" text="Organizer" />
+            <TableColumn fx:id="nameColumn" prefWidth="161.00003051757812" text="Name" />
+          <TableColumn fx:id="dateColumn" prefWidth="138.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="168.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleSubscribe" prefHeight="25.0" prefWidth="103.0" text="Subscribe" />
+   </children>
+</AnchorPane>

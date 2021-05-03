@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="385.0" prefWidth="556.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddMessagePageController">
+   <children>
+      <Label layoutX="373.0" layoutY="41.0" text="Message">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="messageArea" layoutX="312.0" layoutY="78.0" prefHeight="210.0" prefWidth="200.0" />
+      <Pagination fx:id="pagination" layoutX="52.0" layoutY="71.0" prefHeight="251.0" prefWidth="200.0" />
+      <Button layoutX="231.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="25.0" prefWidth="93.0" text="Send" />
+      <Pane fx:id="toPanel" layoutX="52.0" layoutY="78.0" prefHeight="193.0" prefWidth="200.0" />
+      <Label layoutX="141.0" layoutY="41.0" text="To">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

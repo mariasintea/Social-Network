@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="370.0" prefWidth="370.0" stylesheets="./css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddFriendPageController">
+   <children>
+       <Pagination fx:id="pagination" layoutX="20.0" layoutY="31.0" prefHeight="274.0" prefWidth="330.0" />
+      <TableView fx:id="tableUsers" layoutX="20.0" layoutY="36.0" prefHeight="213.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="110.0" text="Username" />
+          <TableColumn fx:id="nameColumn" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="surnameColumn" prefWidth="110.0" text="Surname" />
+        </columns>
+      </TableView>
+      <Button layoutX="105.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="25.0" prefWidth="160.0" text="Send Friend Request" />
+   </children>
+</AnchorPane>

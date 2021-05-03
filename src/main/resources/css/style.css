@@ -1,0 +1,323 @@
+/*window*/
+.root{
+    -fx-background-image: url("../images/background.jpg");
+}
+
+/*labels*/
+.label {
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 2, 0.0 , 0 , 1 );
+    -fx-text-fill: rgb(77, 77, 77);
+}
+
+/*buttons*/
+.button {
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-radius: 50px;
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: rgb(256, 256, 256);
+    -fx-text-fill: rgb(130, 201, 201);
+}
+
+/*tables*/
+.table-view{
+    -fx-text-fill: rgb(15, 36, 36);
+    -fx-text-alignment: center;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-tile-alignment: center;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:  rgb(130, 201, 201);
+    -fx-background-radius: 7px 7px 0px 0px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column {
+    -fx-alignment: center;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-alignment: center;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: rgb(219, 240, 240);
+}
+.table-row-cell:even{
+    -fx-background-color: rgb(237, 247, 247);
+}
+
+.table-row-cell:selected{
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-text-alignment: center;
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-border-color: rgb(94, 186, 186);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  rgb(219, 240, 240);
+}
+
+/*text-field*/
+.text-field{
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(94, 186, 186);
+    -fx-background-color: white;
+    -fx-border-color: none;
+    -fx-opacity: 0.8;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+
+/*text-area*/
+.text-area{
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(94, 186, 186);
+    -fx-background-color: white;
+    -fx-border-color: none;
+    -fx-opacity: 0.8;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/*pagination*/
+.pagination .pagination-control .control-box {
+    -fx-spacing: 0;
+}
+
+.pagination .pagination-control .control-box .number-button,
+.pagination .pagination-control .control-box .bullet-button,
+.pagination .pagination-control .control-box .left-arrow-button,
+.pagination .pagination-control .control-box .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-min-width: 20;
+    -fx-min-height: 20;
+}
+
+.pagination .pagination-control .control-box .number-button:hover,
+.pagination .pagination-control .control-box .bullet-button:hover{
+    -fx-background-insets: 0;
+    -fx-background-color: rgb(219, 240, 240);
+}
+
+.pagination .pagination-control .control-box .number-button:selected,
+.pagination .pagination-control .control-box .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: rgb(94, 186, 186);
+    -fx-text-fill: rgb(256, 256, 256);
+}
+
+/*check-boxes*/
+.check-box{
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-background-radius: 20%;
+    -fx-border-color: rgb(94, 186, 186);
+    -fx-border-radius: 20%;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: rgb(256, 256, 256);
+}
+
+.check-box:selected .box {
+    -fx-background-color: rgb(94, 186, 186);
+    -fx-background-radius: 20%;
+    -fx-border-radius: 20%;
+}
+
+/*combo-boxes*/
+.combo-box{
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-background-radius: 50px;
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.combo-box .list-cell
+{
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-background-radius: 50px;
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+.combo-box-popup .list-view
+{
+    -fx-text-fill: rgb(130, 201, 201);
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(256, 256, 256);
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-text-fill: rgb(130, 201, 201);
+    -fx-alignment: center;
+    -fx-background-radius: none;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(256, 256, 256);
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-text-fill: rgb(256, 256, 256);
+    -fx-alignment: center;
+    -fx-background-radius: 50px;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+.combo-box-popup .virtual-flow .scroll-bar:vertical,
+.combo-box-popup .virtual-flow .scroll-bar:vertical .track,
+.combo-box-popup .virtual-flow .scroll-bar:vertical .track-background{
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .virtual-flow .scroll-bar .increment-button,
+.combo-box-popup .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+}
+.combo-box-popup .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+/*date-pickers*/
+.date-picker{
+    -fx-background-color: transparent;
+    -fx-background-radius: none;
+}
+
+.date-picker .text-field {
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-background-radius: 50px 0 0 50px;
+}
+
+.date-picker:focused .text-field,
+.date-picker .text-field:focused {
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(256, 256, 256);
+    -fx-background-radius: 50px 0 0 50px;
+}
+
+.date-picker-popup  {
+    -fx-border-color: rgb(130, 201, 201);
+    -fx-background-color: transparent;
+}
+
+.date-picker .arrow-button{
+    -fx-background-radius: 0px;
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+.date-picker .arrow-button .arrow{
+    -fx-background-radius: 0px ;
+    -fx-background-color: rgb(256, 256, 256);
+}
+
+.date-picker .arrow-button:hover{
+    -fx-background-radius: 0px;
+    -fx-background-color: rgb(256, 256, 256);
+}
+
+.date-picker .arrow-button:hover .arrow{
+    -fx-background-radius: 0px ;
+    -fx-background-color: rgb(130, 201, 201);
+}
+
+.date-picker .button {
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+
+.date-picker .button:hover {
+    -fx-border-color:transparent;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
+
+.date-picker .cell {
+    -fx-background-color: rgb(256, 256, 256);
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-alignment: center;
+    -fx-font-family: "Candara";
+    -fx-font-weight: bold;
+    -fx-pref-width: 20px ;
+    -fx-pref-height: 25px ;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: rgb(219, 240, 240);
+    -fx-pref-width: 20px ;
+    -fx-pref-height: 25px ;
+}
+
+.date-picker .cell:focused {
+    -fx-background-color: rgb(130, 201, 201);
+    -fx-pref-width: 20px ;
+    -fx-pref-height: 25px ;
+}
+
+
+
+
+

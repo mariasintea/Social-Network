@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="./css/mainStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainPageController">
+   <children>
+      <Button layoutX="118.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleShowFriends" prefHeight="25.0" prefWidth="133.0" text="Friends" />
+      <Button layoutX="118.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleShowFriendRequests" prefHeight="25.0" prefWidth="133.0" text="Friend Requests" />
+      <Button layoutX="118.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleConversations" prefHeight="25.0" prefWidth="133.0" text="Messages" />
+      <Button layoutX="348.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleReports" prefHeight="25.0" prefWidth="133.0" text="Reports" />
+      <Button layoutX="348.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="25.0" prefWidth="133.0" text="Events" />
+      <Button layoutX="348.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleSettings" prefHeight="25.0" prefWidth="133.0" text="Settings" />
+      <ImageView fx:id="profilePicture" fitHeight="197.0" fitWidth="315.0" layoutX="143.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label" layoutX="1.0" layoutY="236.0" prefHeight="25.0" prefWidth="600.0" text="" />
+   </children>
+</AnchorPane>
